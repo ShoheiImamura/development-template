@@ -1,0 +1,31 @@
+/* フォントをWebフォントに変更します */
+body {
+	font-family: "Noto Sans JP";
+}
+
+/* 中央本文の幅を広めに調整します */
+/*
+.md-grid {
+	max-width: 78rem;
+}
+.md-typeset {
+	font-size: .7rem;
+}
+*/
+
+/* 段落項目を見やすくマークアップします */
+.md-typeset h1 {
+	border-bottom: .1rem solid rgba(0, 0, 0, 0.5);
+}
+
+.md-typeset h2 {
+	border-bottom: .1rem solid rgba(0, 0, 0, .3);
+}
+
+.md-typeset h3 {
+	text-decoration: underline;
+}
+
+.md-typeset h4 {
+	text-decoration: underline;
+}

@@ -1,0 +1,52 @@
+# 共通設定
+site_name: システム開発ドキュメント
+use_directory_urls: true
+
+# テーマ設定 (Material for MkDocs)
+theme:
+  name: "material"
+  palette:
+    primary: "teal"
+    accent: "teal"
+  language: "ja"
+  feature:
+    tabs: true
+
+# cssのカスタマイズ設定
+extra_css:
+  - "https://fonts.googleapis.com/earlyaccess/notosansjp.css"
+  - stylesheets/extra.css
+
+# 拡張機能の設定
+markdown_extensions:
+  # Python Markdown Extensions
+  - markdown.extensions.admonition
+  - markdown.extensions.codehilite:
+      guess_lang: false
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc:
+      permalink: true
+  # PyMdown Extensions
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  # PlantUML
+  - plantuml_markdown:
+      server: http://plantuml-server:8080
+      format: svg
