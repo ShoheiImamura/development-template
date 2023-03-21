@@ -34,12 +34,6 @@ RUN apt-get update \
   && composer config -g process-timeout 3600 \
   && composer config -g repos.packagist composer https://packagist.org
 
-
 COPY ./infra/docker/php/php.development.ini /usr/local/etc/php/php.ini
 
 COPY ./src /workspace
-
-RUN composer install -q -n --no-ansi --no-dev --no-scripts --no-progress --prefer-dist \
-  && chmod -R 777 storage bootstrap/cache \
-  && php artisan optimize:clear \
-  && php artisan optimize

@@ -11,7 +11,18 @@ theme:
   language: "ja"
   feature:
     tabs: true
-
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - search.suggest
+  font:
+    text: Noto Sans JP
+    code: Inconsolata
+plugins:
+  - search:
+      lang: ja
 # cssのカスタマイズ設定
 extra_css:
   - "https://fonts.googleapis.com/earlyaccess/notosansjp.css"
